@@ -47,7 +47,7 @@ var normal_vector: Vector3
 func pack_textures_popup() -> void:
 	if window != null:
 		window.show()
-		window.move_to_foreground()
+		window.grab_focus()
 		window.move_to_center()
 		return
 	window = (load(WINDOW_SCENE) as PackedScene).instantiate()
